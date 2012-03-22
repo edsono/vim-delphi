@@ -1,0 +1,29 @@
+# Delphi Snippets
+snippet proc
+	procedure ${1:name}(${2:args});
+	begin
+		$1;
+	end;
+snippet beg
+	begin
+		${1}
+	end;
+snippet var
+	var
+		${1}: ${2};
+snippet cr
+	${1:var} := T$1.Create${2:()};
+snippet log
+	WriteLn('-------------------------------> Ok!');
+snippet fn
+	FreeAndNil(${1});
+snippet trye
+	try
+		${1}
+	except
+	end;
+snippet tryf
+	try
+		${1}
+	finally
+	end;
